@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+export interface Props{
+
+}
+const {} = Astro.props;
+
+---
+<div class="promo flex items-center justify-center  h-8 ">
+    <svg class="hidden md:inline-block" version="1.0" xmlns="http://www.w3.org/2000/svg"
+         width="10.000000pt" height="10.000000pt" viewBox="0 0 50.000000 50.000000"
+         preserveAspectRatio="xMidYMid meet">
+       <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+       </g>
+    </svg>
+    <p class="text-white texto-animado whitespace-nowrap">¡Suscríbete y recibe todo lo relacionado para el cuidado de tu bebé!</p>
+</div>
+
+<style>
+    .promo{
+        background-color: #005D7E;
+    }
+    @keyframes scroll-derecha-izquierda {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .texto-animado {
+            animation: scroll-derecha-izquierda 10s linear infinite;
+        }
+    }
+</style>
+
