@@ -5,9 +5,11 @@ import Mensaje from "../components/Mensaje.astro";
 import Navbar from "../components/Navbar.astro";
 import Promo from "../components/Promo.astro";
 import ImageCard from "../components/ImageCard.astro";
+import ImageCardButton from "../components/ImageCardButton.astro";
 import ImageCardLeft from "../components/ImageCardLeft.astro";
 import PrincipalCard from "../components/PrincipalCard.astro";
 import Circle from "../components/Circle.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Parceritos Baby">
@@ -75,6 +77,14 @@ import Circle from "../components/Circle.astro";
         <swiper-slide><Circle text="Juguete" url="" /></swiper-slide>
       </swiper-container>
     </div>
+    <ImageCardButton 
+      imagePc="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/avent_homepage_banner_L.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL2F2ZW50X2hvbWVwYWdlX2Jhbm5lcl9MLnBuZyIsImlhdCI6MTcxMDk0ODMzMCwiZXhwIjoyMzQxNjY4MzMwfQ._SfQHoJAmbxyoj4s4F1qlJ6xyjXYdYx-HzZ9p1YLx_0&t=2024-03-20T15%3A25%3A32.451Z"
+      imageSmartPhone="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/avent_homepage_banner_XS.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL2F2ZW50X2hvbWVwYWdlX2Jhbm5lcl9YUy53ZWJwIiwiaWF0IjoxNzEwOTQ4NDI5LCJleHAiOjIzNDE2Njg0Mjl9.5mpSVX4Y8HbDJQf3piEvShcxl1jFicBAcpFEfKlqxSM&t=2024-03-20T15%3A27%3A10.939Z"
+      tittle="Ser padre o madre es una aventura maravillosa, llena de alegrías y aprendizaje, pero también de momentos desafiantes."
+      subtitle=" No existe un manual de instrucciones, cada niño es único y cada familia tiene su propia dinámica."
+      button="Suscríbete a obtener los mejores consejos"
+    />
+    <Footer/>
   </main>
 </Layout>
 
