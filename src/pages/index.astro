@@ -1,27 +1,89 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Mensaje from '../components/Mensaje.astro';
-import Navbar from '../components/Navbar.astro';
-import Promo from '../components/Promo.astro';
-import ImageCard from '../components/ImageCard.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Mensaje from "../components/Mensaje.astro";
+import Navbar from "../components/Navbar.astro";
+import Promo from "../components/Promo.astro";
+import ImageCard from "../components/ImageCard.astro";
+import ImageCardLeft from "../components/ImageCardLeft.astro";
+import PrincipalCard from "../components/PrincipalCard.astro";
+import Circle from "../components/Circle.astro";
 ---
 
 <Layout title="Parceritos Baby">
-	<main>
-		<div>
-			<Navbar />
-		</div>
-		<ImageCard imagePc='https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/parenthood_banner_L_alt.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL3BhcmVudGhvb2RfYmFubmVyX0xfYWx0LnBuZyIsImlhdCI6MTcxMDI3NTc4MSwiZXhwIjoyMzQwOTk1NzgxfQ.zDj5o4k5Eycgb-AFX48THzyY9wCg50HGaG_sq6QamSY&t=2024-03-12T20%3A36%3A21.200Z' 
-		imageSmartPhone='https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/parenthood_banner_mobile.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL3BhcmVudGhvb2RfYmFubmVyX21vYmlsZS5wbmciLCJpYXQiOjE3MTAyNzU5NzEsImV4cCI6MjM0MDk5NTk3MX0.0oafgvQ7euTdkCJvX-FmL-YkNM3LRReX_ym-mnXJ2MM&t=2024-03-12T20%3A39%3A31.393Z' 
-		tittle='Le acompañamos en cada paso de su bebé'
-		subtitle='Productos para bebés: desde recién nacidos a niños pequeños'/>
-		
-	</main>
+  <main>
+    <div>
+      <Navbar />
+    </div>
+    <ImageCard
+      imagePc="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/parenthood_banner_L_alt.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL3BhcmVudGhvb2RfYmFubmVyX0xfYWx0LnBuZyIsImlhdCI6MTcxMDI3NTc4MSwiZXhwIjoyMzQwOTk1NzgxfQ.zDj5o4k5Eycgb-AFX48THzyY9wCg50HGaG_sq6QamSY&t=2024-03-12T20%3A36%3A21.200Z"
+      imageSmartPhone="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/parenthood_banner_mobile.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL3BhcmVudGhvb2RfYmFubmVyX21vYmlsZS5wbmciLCJpYXQiOjE3MTAyNzU5NzEsImV4cCI6MjM0MDk5NTk3MX0.0oafgvQ7euTdkCJvX-FmL-YkNM3LRReX_ym-mnXJ2MM&t=2024-03-12T20%3A39%3A31.393Z"
+      tittle="Le acompañamos en cada paso de su bebé"
+      subtitle="Productos para bebés: desde recién nacidos a niños pequeños"
+    />
+    <div
+      class="mb-28 flex flex-col items-center space-y-28 justify-center w-full lg:flex-row lg:space-y-0 lg:mt-10 lg:justify-center lg:items-center"
+    >
+      <PrincipalCard
+        tittle="Inicio"
+        subtitle="de 0 a 6 meses"
+        text="Conoce nuestros productos"
+        url="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/Group%2024.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL0dyb3VwIDI0LnBuZyIsImlhdCI6MTcxMDY0NDgwNSwiZXhwIjoyMzQxMzY0ODA1fQ.BQ_Nenm4CS4NcULERkcchTxiHQyle0G5HdoRIYwmKWw&t=2024-03-17T03%3A06%3A47.358Z"
+      />
+      <PrincipalCard
+        tittle="En crecimiento"
+        subtitle="de 6 meses a 2 años"
+        text="Conoce nuestros productos"
+        url="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/Group%2025.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL0dyb3VwIDI1LnBuZyIsImlhdCI6MTcxMDY0NzAyMywiZXhwIjoyMzQxMzY3MDIzfQ.EBlwCeZVqKPcbd6tJFxb-Lp4DD8DokVwEHm0WXFdrg0&t=2024-03-17T03%3A43%3A44.812Z"
+      />
+      <PrincipalCard
+        tittle="En exploracion"
+        subtitle="de 2 años a 5 años"
+        text="Conoce nuestros productos"
+        url="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/Group%2026.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL0dyb3VwIDI2LnBuZyIsImlhdCI6MTcxMDY5NjQwNCwiZXhwIjoyMzQxNDE2NDA0fQ.3VEGsKGQ8XCwb7uQmTCxZlUydJjt8ww6X1H5mXdnnEY&t=2024-03-17T17%3A26%3A46.704Z"
+      />
+    </div>
+    <ImageCardLeft
+      imagePc="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/avent_masthead_btlnpl_2000x450.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL2F2ZW50X21hc3RoZWFkX2J0bG5wbF8yMDAweDQ1MC5wbmciLCJpYXQiOjE3MTA4ODMyODQsImV4cCI6MjM0MTYwMzI4NH0.vNHFOVUCQ0wOQ4aiHCWONINAOEZfqeK5TJp5oGVIWGk&t=2024-03-19T21%3A21%3A26.115Z"
+      imageSmartPhone="https://ggbralugqoodmaklkses.supabase.co/storage/v1/object/sign/public%20images/avent_masthead_btlnpl_450x400.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwdWJsaWMgaW1hZ2VzL2F2ZW50X21hc3RoZWFkX2J0bG5wbF80NTB4NDAwLnBuZyIsImlhdCI6MTcxMDg4MzMwOCwiZXhwIjoyMzQxNjAzMzA4fQ.3_QaXbr_r7T7Coy4wmQOJSarCC4DLEKasXc3SeVw9Nc&t=2024-03-19T21%3A21%3A50.428Z"
+      tittle="Más que un regalo, un legado!: Un comienzo de vida saludable para tu bebé"
+    />
+    <div class="mt-16">
+      <p class="texting text-3xl lg:text-4xl text-center">
+        Bebés felices, papás tranquilos: Encuentra los mejores productos para tu
+        pequeño
+      </p>
+    </div>
+    <div
+      class="hidden lg:visible flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:w-full lg:space-x-20"
+    >
+      <Circle text="Alimentación" url="" />
+      <Circle text="Para Dormir" url="" />
+      <Circle text="Aseo" url="" />
+      <Circle text="Juguete" url="" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+    ></script>
+    <div class="lg:hidden justify-center ml-28">
+      <swiper-container space-between="30"
+      centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide><Circle text="Alimentación" url="" /></swiper-slide>
+        <swiper-slide><Circle text="Para Dormir" url="" /></swiper-slide>
+        <swiper-slide><Circle text="Aseo" url="" /></swiper-slide>
+        <swiper-slide><Circle text="Juguete" url="" /></swiper-slide>
+      </swiper-container>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	h1 {
-		color: red;
-	}
+  h1 {
+    color: red;
+  }
+  .texting {
+    color: #e56399;
+    font-family: "Poppins";
+  }
 </style>
