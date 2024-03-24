@@ -12,9 +12,16 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/truculenta": "^5.0.19",
+    "@fontsource/poppins": "^5.0.12",
+    "@fontsource/twinkle-star": "^5.0.19",
     "astro": "^4.5.9",
     "flowbite": "^2.3.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12"
   }
 }
