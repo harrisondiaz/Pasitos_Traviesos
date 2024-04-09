@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/truculenta": "^5.0.19",
-    "@fontsource/poppins": "^5.0.12",
+    "@fontsource/poppins": "^5.0.13",
     "@fontsource/twinkle-star": "^5.0.19",
     "astro": "^4.5.9",
     "flowbite": "^2.3.0",
